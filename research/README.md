@@ -50,7 +50,7 @@
 | Natasha                       | BaggingClassifier LogReg            | 0.668     | 0.694       |
 | TF-IDF                        | LogisticRegression L1               | 0.665     | 0.708       |
 | TF-IDF                        | XGBoost                             | 0.660     | 0.856       |
-|                               | BaggingClassifier                   | 0.655     | 0.916       |
+| Natasha                       | BaggingClassifier                   | 0.655     | 0.916       |
 | Natasha                       | LogisticRegression                  | 0.651     | 0.691       |
 | SBERT                         | DecisionTreeClassifier             | 0.641     | 0.715       |
 | SBERT                         | AdaBoostClassifier                  | 0.612     | 0.639       |
