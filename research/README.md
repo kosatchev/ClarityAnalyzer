@@ -2,48 +2,60 @@
 
 ## Сравнительная таблица
 
-| Classifier                         | Val Score | Train Score | Overfitting |
-|------------------------------------|-----------|-------------|-------------|
-| LogisticRegression L1              | 0.78      | 0.832       | 0.052       |
-| LogisticRegression L2              | 0.775     | 0.808       | 0.033       |
-| LogisticRegression ElasticNet      | 0.779     | 0.841       | 0.062       |
-| PassiveAggressiveClassifier        | 0.705     | 0.822       | 0.117       |
-| SGDClassifier                      | 0.781     | 0.83        | 0.049       |
-| SVC                                | 0.7       | 0.999       | 0.299       |
-| NuSVC rbf                          | 0.776     | 1           | 0.224       |
-| NuSVC poly                         | 0.78      | 0.863       |             |
-| LinearSVC                          |           | 0.731       | 0.731       |
-| MLPClassifier                      | 0.76      | 0.832       | 0.072       |
-| DecisionTreeClassifier             |           |             | 0           |
-| ExtraTreesClassifier               | 0.73      | 0.78        | 0.05        |
-| AdaBoostClassifier                 | 0.612     | 0.639       | 0.027       |
-| HistGradientBoostingClassifier     | 0.762     | 0.963       | 0.201       |
-| BaggingClassifier                  | 0.655     | 0.916       | 0.261       |
-| VotingClassifier                   | 0.782     | 0.847       | 0.065       |
-| StackingClassifier                 | 0.772     | 0.861       | 0.089       |
-| beelineNN                          | 0.806     | 0.812       | 0.006       |
-| CatBoost                           | 0.772     |             | -0.772      |
-| LightGBM                           | 0.752     | 0.834       | 0.082       |
-| XGBoost                            | 0.757     | 0.87        | 0.113       |
-| KNeighborsClassifier               | 0.688     | 1           | 0.312       |
-| RadiusNeighborsClassifier          | 0.705     | 0.727       | 0.022       |
-| GaussianNB                         | 0.722     | 0.738       | 0.016       |
-| BernoulliNB                        | 0.72      | 0.743       | 0.023       |
-| ComplementNB                       | 0.72      | 0.734       | 0.014       |
-| MultinomialNB                      | 0.718     | 0.728       | 0.01        |
-| LinearDiscriminantAnalysis         | 0.782     | 0.831       | 0.049       |
-| QuadraticDiscriminantAnalysis      | 0.739     | 0.837       | 0.098       |
-| GaussianProcessClassifier          | 0.775     | 0.862       | 0.087       |
-| Naive Bayes (MultinomialNB())      | 0.677     | 0.766       | 0.089       |
-| LogisticRegression L2              | 0.681     | 0.823       | 0.142       |
-| LogisticRegression L1              | 0.669     | 0.817       | 0.148       |
-| SVM                                | 0.684     | 0.962       | 0.278       |
-| XGBoost                            | 0.669     | 0.803       | 0.134       |
-| Naive Bayes (MultinomialNB())      | 0.684     | 0.881       | 0.197       |
-| LogisticRegression L2              | 0.685     | 0.969       | 0.284       |
-| LogisticRegression L1              | 0.665     | 0.708       | 0.043       |
-| SVM                                | 0.687     | 0.998       | 0.311       |
-| XGBoost                            | 0.66      | 0.856       | 0.196       |
+| Vectorizer                    | Classifier                          | Val Score | Train Score |
+|-------------------------------|-------------------------------------|-----------|-------------|
+| SBERT Fine tuning            | Sbert_large                         | 0.804     | 0.921       |
+| SBERT                         | VotingClassifier                    | 0.782     | 0.847       |
+| SBERT                         | LinearDiscriminantAnalysis          | 0.782     | 0.831       |
+| SBERT                         | SGDClassifier                       | 0.781     | 0.830       |
+| SBERT                         | LogisticRegression L1               | 0.780     | 0.832       |
+| SBERT                         | NuSVC poly                          | 0.780     | 0.863       |
+| SBERT                         | LogisticRegression ElasticNet       | 0.779     | 0.841       |
+| SBERT                         | NuSVC rbf                           | 0.776     | 1.000       |
+| SBERT                         | LogisticRegression L2               | 0.775     | 0.808       |
+| SBERT                         | GaussianProcessClassifier           | 0.775     | 0.862       |
+| SBERT                         | CatBoost                            | 0.773     | 0.816       |
+| SBERT                         | StackingClassifier                  | 0.772     | 0.861       |
+| SBERT                         | AugmentedDataset+LogRegression      | 0.772     | 0.828       |
+| SBERT                         | GradientBoostingClassifier          | 0.762     | 0.995       |
+| SBERT                         | HistGradientBoostingClassifier      | 0.762     | 0.963       |
+| SBERT                         | MLPClassifier                       | 0.760     | 0.832       |
+| SBERT                         | XGBoost                             | 0.757     | 0.870       |
+| SBERT                         | LightGBM                            | 0.752     | 0.834       |
+| SBERT                         | LinearSVC                           | 0.749     | 0.879       |
+| SBERT                         | AugmentedDataset+CatBoost           | 0.748     | 0.830       |
+| SBERT                         | RandomForestClassifier              | 0.744     | 0.905       |
+| SBERT                         | QuadraticDiscriminantAnalysis       | 0.739     | 0.837       |
+| SBERT                         | ExtraTreesClassifier                | 0.730     | 0.780       |
+| SBERT                         | GaussianNB                          | 0.722     | 0.738       |
+| SBERT                         | BernoulliNB                         | 0.720     | 0.743       |
+| SBERT                         | ComplementNB                        | 0.720     | 0.734       |
+| SBERT                         | MultinomialNB                       | 0.718     | 0.728       |
+| SBERT                         | PassiveAggressiveClassifier         | 0.705     | 0.822       |
+| SBERT                         | RadiusNeighborsClassifier           | 0.705     | 0.727       |
+| SBERT                         | SVC                                 | 0.700     | 0.999       |
+| Natasha                       | BaggingClassifier DesTree           | 0.696     | 0.904       |
+| SBERT                         | KNeighborsClassifier                | 0.688     | 1.000       |
+| Natasha                       | RandomForestClassifier              | 0.688     | 0.956       |
+| TF-IDF                        | SVM                                 | 0.687     | 0.998       |
+| TF-IDF                        | LogisticRegression L2               | 0.685     | 0.969       |
+| BOW                           | SVM                                 | 0.684     | 0.962       |
+| TF-IDF                        | Naive Bayes (MultinomialNB())       | 0.684     | 0.881       |
+| BOW                           | LogisticRegression L2               | 0.681     | 0.823       |
+| Natasha                       | LGBMClassifier                      | 0.680     | 0.960       |
+| BOW                           | Naive Bayes (MultinomialNB())       | 0.677     | 0.766       |
+| Natasha                       | Neural Network                      | 0.677     | 0.695       |
+| BOW                           | LogisticRegression L1               | 0.669     | 0.817       |
+| BOW                           | XGBoost                             | 0.669     | 0.803       |
+| Natasha                       | BaggingClassifier LogReg            | 0.668     | 0.694       |
+| TF-IDF                        | LogisticRegression L1               | 0.665     | 0.708       |
+| TF-IDF                        | XGBoost                             | 0.660     | 0.856       |
+|                               | BaggingClassifier                   | 0.655     | 0.916       |
+| Natasha                       | LogisticRegression                  | 0.651     | 0.691       |
+| SBERT                         | DecisionTreeClassifier             | 0.641     | 0.715       |
+| SBERT                         | AdaBoostClassifier                  | 0.612     | 0.639       |
+| Natasha                       | DecisionTreeClassifier             | 0.586     | 0.762       |
+
 
 <img src='./img/classifier_scores.png'>
 
