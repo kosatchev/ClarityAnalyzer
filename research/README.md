@@ -57,7 +57,7 @@
 | Natasha                       | DecisionTreeClassifier             | 0.586     | 0.762       |
 
 
-<img src='./img/classifier_scores.png'>
+<img src='./data/img/classifier_scores.png'>
 
 ## Результат тестирования ручной нормализации с моделью токенизации sbert
 Тестирование приведено в ноутбуке [sbert_normalization_test](https://github.com/kosatchev/ClarityAnalyzer/blob/636410cc88ab1a55d1e1e9516b92d0f90a8741c7/research/sbert_normalization_test.ipynb).
