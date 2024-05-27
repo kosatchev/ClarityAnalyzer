@@ -1,5 +1,7 @@
-# <img src='./static/img/mipt-icon.png' width="70" height="30">
-# Задача от Beeline
+# <img src='./static/img/mipt-icon.png' width="70" height="30"> <img src='static/img/beelogo.png' width=100>
+
+
+# Задача от Beeline 
 
 **💼 Заказчик:** Компания Beeline является одним из ведущих поставщиков телекоммуникационных услуг в России.
 
