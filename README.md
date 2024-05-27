@@ -16,7 +16,7 @@
 * Дообучались 8 последних слоев энкодера и линейный слой (классификатор). 
 * ROC-AUC на тестовой выборке: **0.804**.
 
-Пайплайн обучения модели находится в файле [Bert fine-tuning](https://github.com/kosatchev/ClarityAnalyzer/blob/28e105f7b15d04c355aceef740cb16a0f72db731/Sbert%20fine-tuning.ipynb).  
+Пайплайн обучения модели находится в файле <img src='static/img/bl2.png' width=30> [Bert fine-tuning](https://github.com/kosatchev/ClarityAnalyzer/blob/28e105f7b15d04c355aceef740cb16a0f72db731/Sbert%20fine-tuning.ipynb).  
 Предобученная модель размещена на 🤗 [HuggingFace](https://huggingface.co/nazarovmichail/sbert_large_transcription_classification).  
 Для удобства тестирования мы подготовили ноутбук [Model inference](https://github.com/kosatchev/ClarityAnalyzer/blob/5140565336c5d6bf58fe1c30fc5d24f681b5994e/Model%20inference.ipynb).
 
